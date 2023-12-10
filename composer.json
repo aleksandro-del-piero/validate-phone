@@ -1,0 +1,32 @@
+{
+    "name": "aleksandro-del-piero/validate-phone",
+    "version": "1.0.0",
+    "description": "Package for validation phone number",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandro Del Piero",
+            "email": "aleksandrodelpieros@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AleksandroDelPiero\\ValidatePhone\\": "src"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AleksandroDelPiero\\ValidatePhone\\ValidatePhoneServiceProvider"
+            ]
+        }
+    }
+}
